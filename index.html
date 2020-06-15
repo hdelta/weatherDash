@@ -10,39 +10,85 @@
 </head>
 
 <body>
+    <!--Hero/Header-->
     <header class="hero">
         <h1 class="app-title">Weather Dashboard</h1>
     </header>
 
+    <!--Search Container-->
+    <div id="searchContainer">
+        <input class="searchControl" type="text" placeholder="City Name or Zip Code" id="searchInput">
+        <button class="searchControl" id="searchBtn">Search</button>
+    </div>
 
-    <main>
-        <div class="card">
-            <h3 class="card-header">Search:</h3>
-            <form id="search-form" class="card-body">
-                <input name="cityName" id="city" type="text" class="form-input" placeholder="City" />
-                <button id="submit" type="submit" class="btn">Search</button>
-            </form>
-            <div>
-                <div id="response-container" class="list-group"></div>
+    <div id="previouslySearchedList">
+        <span></span>
+    </div>
+    <div id="searchResults">
+        <span id="results-search-term"></span>
+        <div id="results-container" class="list-group"></div>
+    </div>
+
+    <!--Current Weather Display-->
+    <div id="weatherContainer">
+        <div id=weatherDescription>
+            <h1 id="cityHeader"></h1>
+            <div id="weatherMain">
+                <div id="temperature"></div>
+                <div id="weatherDescriptionHeader"></div>
+                <div><img id="documentIconImg"></div>
             </div>
+            <hr>
+            <div id="windSpeed" class="bottomDetails"></div>
+            <div id="humidity" class="bottomDetails"></div>
+            <div id="date"></div>
         </div>
+    </div>
 
-        <div class="currentWeather">
-            <h2>Current Weather:</h2>
-            <div id="weather">
-                <div id="description"></div>
-                <h1 id="temp"></h1>
-                <div id="location"></div>
-              </div>
-        </div>
-
-        <div class="forecast">
-            <h2>5 day Forecast:</h2>
-            <section class="forecastSection">
-                <div class="container">
-                    <ul class="cities"></ul>
+    <!--5 Day Forecast-->
+    <main>
+        <div id="fiveDayForecast">
+            <h2>5 Day Forecast:</h2>
+            <div id="forecastContainer">
+                <div id=forecastDescription>
+                    <div id="date1">Date</div>
+                    <div id="temperature1">Temp</div>
+                    <div><img id="documentIconImg1"></div>
+                    <div id="humidity1">Temp</div>
                 </div>
-            </section>
+            </div>
+            <div id="forecastContainer">
+                <div id=forecastDescription>
+                    <div id="date2">Date</div>
+                    <div id="temperature2">Temp</div>
+                    <div><img id="documentIconImg2"></div>
+                    <div id="humidity2">Temp</div>
+                </div>
+            </div>
+            <div id="forecastContainer">
+                <div id=forecastDescription>
+                    <div id="date3">Date</div>
+                    <div id="temperature3">Temp</div>
+                    <div><img id="documentIconImg3"></div>
+                    <div id="humidity3">Temp</div>
+                </div>
+            </div>
+            <div id="forecastContainer">
+                <div id=forecastDescription>
+                    <div id="date4">Date</div>
+                    <div id="temperature4">Temp</div>
+                    <div><img id="documentIconImg4"></div>
+                    <div id="humidity4">Temp</div>
+                </div>
+            </div>
+            <div id="forecastContainer">
+                <div id=forecastDescription>
+                    <div id="date5">Date</div>
+                    <div id="temperature5">Temp</div>
+                    <div><img id="documentIconImg5"></div>
+                    <div id="humidity5">Temp</div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./assets/js/script.js"></script>

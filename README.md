@@ -1,6 +1,6 @@
 # weatherDash
 
-is the second weekly challenge in a Web Dev Bootcamp used to apply the recently acquired skills. This challenge is also meant to build a real world professional portfolio to showcase skills and talent for future employers or clients.
+WeatherDash is the second weekly challenge in a Web Dev Bootcamp used to apply the recently acquired skills. This challenge is also meant to build a real world professional portfolio to showcase skills and talent for future employers or clients.
 
 ## Tech Used
 
@@ -40,7 +40,7 @@ Main author: Hailey Duke, OLY
 ### Links
 
 GitHub Repo Link:
-https://github.com/hdelta/Challenge2
+https://github.com/hdelta/weatherDash
 
 https://hdelta.github.io
 
